@@ -49,7 +49,7 @@ export const createUser = async (req, res) => {
 // POST: Create many users in the database
 export const createManyUsers = async (req, res) => {
   try {
-    const newUsers = await User.insertMany(req.body.users); // An array of users
+    const newUsers = await User.create(req.body.users); // An array of users
     res
       .status(201)
       .json({ message: "Users created successfully", data: newUsers });
