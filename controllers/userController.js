@@ -13,7 +13,7 @@ export const getAllUsers = async (req, res) => {
   }
 };
 
-// GET: Find a particular user by criteria (e.g., email, username, or id)
+// GET: Find a particular user by criteria (e.g., email, name, or id)
 export const findUser = async (req, res) => {
   try {
     // Expect searchterm in the request body, such as{"searchterm": { "email": "user@example.com" }}
